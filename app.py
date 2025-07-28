@@ -57,5 +57,5 @@ if uploaded_files and job_desc:
         "Resume Preview": [text[:300] + "..." for text in resume_texts]
     }).sort_values(by="Similarity Score (%)", ascending=False)
 
-    st.success("Top matching resumes:")
+    st.success("Top matching resume:")
     st.dataframe(result_df)
